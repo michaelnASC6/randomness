@@ -30,3 +30,7 @@ function randomNumber(number){
 function randomLetter(){
     console.log(alphabet)
 }
+
+
+const number = Math.random()
+const random_number = 21*number
