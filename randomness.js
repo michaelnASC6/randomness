@@ -23,13 +23,17 @@ const students = [
 // END OF GLOBAL VARIABLES //
 /////////////////////////////
 
-//const number = Math.random()
-//const random_number = 21 * number
 
-function randomNumber(){
-    console.log(random_number);
+function randomFood(){
+
+    const foodNum = Math.random() * foods.length;
+
+    const roundFood = Math.floor(foodNum);
+
+    const foodFinal = foods [roundFood];
+
+    console.log ("Food: " + foodFinal);
 }
-
 
 
 function randomLetter(){
@@ -44,7 +48,35 @@ function randomLetter(){
     console.log("Number: ", roundNum + 1);
     
     console.log("Letter: " + final);
-
 }
 
+function randomStudents(){
+
+    const numStudents = Math.random() * students.length;
+
+    const roundStudents = Math.floor(numStudents);
+
+    const finalStudents = students [roundStudents]
+
+    console.log("Student: " + finalStudents);
+}
+
+function randomGroup(){
+    const numGroup = Math.random() * students.length;
+
+    const roundGroup = Math.floor(numGroup);
+
+//    const roundFroup2 = Math.ceiling(numGroup - 1);
+
+    const finalGroup = students [roundGroup]
+
+  //  const finalGroup2 = students [roundGroup2]
+
+    console.log("Group:" + finalGroup + " " + finalGroup + " and " + finalGroup);
+
+
+}
 randomLetter();
+randomFood();
+randomStudents();
+randomGroup();
